@@ -1,0 +1,21 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+    <metadata-complete>true</metadata-complete>
+    <servlet>
+        <servlet-name>DeserializeEndpoint</servlet-name>
+        <servlet-class>com.server.vulEnpoint.DeserializeEndpoint</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeserializeEndpoint</servlet-name>
+        <url-pattern>/deserialize</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>com.server.StartupDetector</listener-class>
+    </listener>
+</web-app>
